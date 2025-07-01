@@ -1,4 +1,3 @@
-Sure! Here's the **complete `README.md` file** for your full-stack project:
 **"Development of an Intelligent Pathfinding Algorithm for Campus Navigation Application Using Campus Data and User Preferences"**
 
 ---
@@ -6,7 +5,7 @@ Sure! Here's the **complete `README.md` file** for your full-stack project:
 ````markdown
 # 🧭 Intelligent Campus Navigation System
 
-This is a full-stack application for pedestrian navigation on university campuses, tailored for the University of Nigeria, Nsukka (UNN). It combines an intelligent pathfinding algorithm with geospatial data and user preferences to guide students, staff, and visitors efficiently.
+This is a full-stack application(Backend Part) for pedestrian navigation on university campuses, tailored for the University of Nigeria, Nsukka (UNN). It combines an intelligent pathfinding algorithm with geospatial data and user preferences to guide students, staff, and visitors efficiently.
 
 ---
 
@@ -18,13 +17,12 @@ This is a full-stack application for pedestrian navigation on university campuse
 
 ## 🛠 Tech Stack
 
-- **Frontend**: React.js or Next.js, TailwindCSS, Axios
 - **Backend**: Node.js, Express.js
 - **Database**: MySQL (or PostgreSQL)
 - **Authentication (optional)**: JWT
 - **Mapping Tools**: Leaflet.js / Mapbox GL JS / OpenLayers
 - **Pathfinding Algorithm**: A* (A-star) or Dijkstra’s algorithm
-- **Hosting**: Vercel (frontend) and Render/Railway (backend)
+- **Hosting**: Railway (backend)
 
 ---
 
@@ -69,7 +67,7 @@ This is a full-stack application for pedestrian navigation on university campuse
 | GET    | `/api/paths`            | Retrieve path connections between locations |
 | POST   | `/api/find-route`       | Get optimal path based on input preferences |
 | POST   | `/api/user-preferences` | Save or update user preferences             |
-| POST   | `/api/auth/register`    | Register a new user (if auth is used)       |
+| POST   | `/api/auth/register`    | Register a new user                         |
 | POST   | `/api/auth/login`       | Login user                                  |
 
 ---
@@ -79,8 +77,7 @@ This is a full-stack application for pedestrian navigation on university campuse
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/campus-pathfinder.git
-cd pathfinder-api
+git clone https://github.com/edarth002/pathfinder-api.git
 ```
 
 ### 2. Setup Backend
@@ -107,17 +104,6 @@ Then start the server:
 npm run dev
 ```
 
-### 3. Setup Frontend
-
-```bash
-cd ../frontend
-npm install
-npm run dev
-```
-
-Visit `http://localhost:3000` in your browser.
-
----
 
 ## 🗺️ How the Pathfinding Works
 

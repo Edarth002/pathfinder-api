@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS edges(
     id INT AUTO_INCREMENT PRIMARY KEY,
     start_node_id INT NOT NULL,
     finish_node_id INT NOT NULL,
-    distance DOUBLE NOT NULL,
+    distance DECIMAL(10,4) NOT NULL,
     is_shade BOOLEAN,
     is_stairs BOOLEAN,
     is_ramp BOOLEAN,

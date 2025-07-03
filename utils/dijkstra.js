@@ -49,7 +49,7 @@ export function getPath(previous, end) {
   return path;
 }
 
-
+//Test case
 const graph = {
   HostelA: { CEC: 5, Admin: 2 },
   Admin: { Library: 1 },

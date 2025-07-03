@@ -37,7 +37,7 @@ export function dijkstra(graph, start){
     }
     return {distances, previous}
 }
-export function getPath(previous, end) {
+export function constructPath(previous, end) {
   const path = [];
   let current = end;
 
@@ -58,7 +58,7 @@ const graph = {
 };
 
 const { distances, previous } = dijkstra(graph, 'HostelA');
-const shortestPathToLibrary = getPath(previous, 'Library');
+const shortestPathToLibrary = constructPath(previous, 'Library');
 
 console.log("Shortest distance to Library:", distances['Library']);
 console.log("Path to Library:", shortestPathToLibrary);

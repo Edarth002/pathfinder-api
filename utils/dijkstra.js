@@ -37,3 +37,28 @@ export default function dijkstra(graph, start){
     }
     return {distances, previous}
 }
+export function getPath(previous, end) {
+  const path = [];
+  let current = end;
+
+  while (current) {
+    path.unshift(current);
+    current = previous[current];
+  }
+
+  return path;
+}
+
+
+const graph = {
+  HostelA: { CEC: 5, Admin: 2 },
+  Admin: { Library: 1 },
+  CEC: { Library: 3 },
+  Library: {}
+};
+
+const { distances, previous } = dijkstra(graph, 'HostelA');
+const shortestPathToLibrary = getPath(previous, 'Library');
+
+console.log("Shortest distance to Library:", distances['Library']); // 3
+console.log("Path to Library:", shortestPathToLibrary); // ['HostelA', 'Admin', 'Library']

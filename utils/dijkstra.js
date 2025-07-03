@@ -1,4 +1,4 @@
-export default function dijkstra(graph, start){
+export function dijkstra(graph, start){
     const distances = {}
     const visited = new Set()
     const previous = {}
@@ -60,5 +60,5 @@ const graph = {
 const { distances, previous } = dijkstra(graph, 'HostelA');
 const shortestPathToLibrary = getPath(previous, 'Library');
 
-console.log("Shortest distance to Library:", distances['Library']); // 3
-console.log("Path to Library:", shortestPathToLibrary); // ['HostelA', 'Admin', 'Library']
+console.log("Shortest distance to Library:", distances['Library']);
+console.log("Path to Library:", shortestPathToLibrary);

@@ -66,7 +66,7 @@ This is a full-stack application(Backend Part) for pedestrian navigation on univ
 | ------ | ----------------------- | ------------------------------------------- |
 | GET    | `/api/locations`        | Fetch all campus locations                  |
 | GET    | `/api/paths`            | Retrieve path connections between locations |
-| POST   | `/api/find-route`       | Get optimal path based on input preferences |
+| POST   | `/api/find-best-route`  | Get optimal path based on input preferences |
 | POST   | `/api/user-preferences` | Include user preferences                    |
 
 ---

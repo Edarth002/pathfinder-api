@@ -1,7 +1,7 @@
 import db from "../db.js";
 import { dijkstra, constructPath } from "../utils/dijkstra.js";
 
-export async function buildGraph() {
+export async function buildGraph(avoidStairs, preferShades, preferRamps) {
   let [nodes] = await db.execute("SELECT * FROM nodes");
   let [edges] = await db.execute("SELECT * FROM edges");
 
@@ -15,6 +15,13 @@ export async function buildGraph() {
     let startNode = nodes.find((n) => n.id === edge.start_node_id);
     let finishNode = nodes.find((n) => n.id === edge.finish_node_id);
 
+    let weight = edge.distance;
+
+    //Modify weights using values to based on user's preferences
+    if (avoidStairs && edge.is_stairs) weight *= 1.6;
+    if (preferShades && edge.is_shade) weight *= 0.3;
+    if (preferRamps && edge.is_ramp) weight *= 0.3;
+
     if (startNode && finishNode) {
       graph[startNode.name][finishNode.name] = edge.distance;
       graph[finishNode.name][startNode.name] = edge.distance;
@@ -26,7 +33,7 @@ export async function buildGraph() {
 
 export async function bestPathRoute(req, res) {
   try {
-    const { start, end } = req.query;
+    const { start, end, avoidStairs, preferShades, preferRamps } = req.query;
 
     if (!start || !end) {
       return res
@@ -35,7 +42,7 @@ export async function bestPathRoute(req, res) {
           "Missing parameter... Both start and end destinations are required"
         );
     }
-    const graph = await buildGraph();
+    const graph = await buildGraph(avoidStairs, preferShades, preferRamps);
 
     const { distances, previous } = dijkstra(graph, start);
     const pathNames = constructPath(previous, end);

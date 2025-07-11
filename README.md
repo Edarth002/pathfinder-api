@@ -151,6 +151,12 @@ MIT © 2025 Arthur Onyeanusi
 
 ## 📞 Contact
 
-- Email: [yourname@unn.edu.ng](mailto:yourname@unn.edu.ng)
-- GitHub: [github.com/your-username](https://github.com/edarth002)
+- Email: [arthuronyeanusi@gmail.com](mailto:arthuronyeanusi@gmail.com)
+- GitHub: [github.com/edarth002](https://github.com/edarth002)
 - LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+
+## Proposed Change of Name
+
+    **"Design and Implementation of a Campus Navigation System Using Graph-Based Pathfinding and Location Data"**
+
+---

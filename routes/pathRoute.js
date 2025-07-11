@@ -1,8 +1,8 @@
 import express from "express";
-import { bestPathRoute } from "../controllers/pathcontroller";
+import { getPaths } from "../controllers/edgeController";
 
 const router = express.Router();
 
-router.get("/find-best-route", bestPathRoute);
+router.get("/paths", getPaths);
 
 export default router;

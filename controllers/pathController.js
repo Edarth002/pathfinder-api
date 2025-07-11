@@ -23,8 +23,8 @@ export async function buildGraph(avoidStairs, preferShades, preferRamps) {
     if (preferRamps && edge.is_ramp) weight *= 0.3;
 
     if (startNode && finishNode) {
-      graph[startNode.name][finishNode.name] = edge.distance;
-      graph[finishNode.name][startNode.name] = edge.distance;
+      graph[startNode.name][finishNode.name] = weight;
+      graph[finishNode.name][startNode.name] = weight;
     }
   });
 

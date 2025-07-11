@@ -1,9 +1,9 @@
-**"Design and Implementation of a Campus Navigation System Using Graph-Based Pathfinding and Location Data"**s
+**"Design and Implementation of a Campus Navigation System Using Graph-Based Pathfinding and Location Data"**
 
 ---
 
 ````markdown
-# 🧭 Intelligent Campus Navigation System
+# 🧭 Campus Navigation System
 
 This is a full-stack application(Backend Part) for pedestrian navigation on university campuses, tailored for the University of Nigeria, Nsukka (UNN). It combines an intelligent pathfinding algorithm with geospatial data and user preferences to guide students, staff, and visitors efficiently.
 
@@ -11,7 +11,7 @@ This is a full-stack application(Backend Part) for pedestrian navigation on univ
 
 ## 📌 Project Title
 
-**Development of an Intelligent Pathfinding Algorithm for Campus Navigation Application Using Campus Data and User Preferences**
+**Design and Implementation of a Campus Navigation System Using Graph-Based Pathfinding and Location Data**
 
 ---
 

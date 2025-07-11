@@ -1,4 +1,4 @@
-**"Development of an Intelligent Pathfinding Algorithm for Campus Navigation Application Using Campus Data and User Preferences"**
+**"Design and Implementation of a Campus Navigation System Using Graph-Based Pathfinding and Location Data"**s
 
 ---
 
@@ -154,8 +154,3 @@ MIT © 2025 Arthur Onyeanusi
 - GitHub: [github.com/edarth002](https://github.com/edarth002)
 - LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
 
-## Proposed Change of Name
-
-    **"Design and Implementation of a Campus Navigation System Using Graph-Based Pathfinding and Location Data"**
-
----
